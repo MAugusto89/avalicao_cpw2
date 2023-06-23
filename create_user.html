@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo Auth</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+  <div id="form-container">
+    <a href="login.html" id="login-link">
+      Já tem uma conta ? Clique aqui !
+    </a>
+    
+    <h2>Cadastro</h2>
+    <form id="registration-form">
+      <input 
+        type="email" 
+        id="email" 
+        placeholder="E-mail" 
+        required>
+
+      <input 
+        type="password" 
+        id="password" 
+        placeholder="Senha" 
+        required>
+      
+      <input 
+        type="password" 
+        id="password-confirmation" 
+        placeholder="Confirme a senha" 
+        required>
+
+      <input type="submit" value="Cadastrar" id="submit-button">
+    </form>
+    
+
+    <div id="result-panel-cadastro"></div>
+  </div>
+
+  <script type="module" src="/src/create_user.js"></script>
+</body>
+
+</html>
